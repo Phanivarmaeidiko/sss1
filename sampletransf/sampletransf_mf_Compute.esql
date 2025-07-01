@@ -19,6 +19,6 @@ CREATE COMPUTE MODULE sampletransf_mf_Compute
 	END;
 
 	CREATE PROCEDURE CopyEntireMessage() BEGIN
-		SET OutputRoot.JSON.Data = "hello this is modified";
+		SET OutputRoot.JSON.Data = "hello this is modified jenkin";
 	END;
 END MODULE;
