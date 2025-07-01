@@ -7,7 +7,6 @@ CREATE COMPUTE MODULE sampletransf_mf_Compute
 		 CALL CopyEntireMessage();
 		RETURN TRUE;
 	END;
-
 	CREATE PROCEDURE CopyMessageHeaders() BEGIN
 		DECLARE I INTEGER 1;
 		DECLARE J INTEGER;
@@ -17,11 +16,6 @@ CREATE COMPUTE MODULE sampletransf_mf_Compute
 			SET I = I + 1;
 		END WHILE;
 	END;
-
-
-
-
-
 
 	CREATE PROCEDURE CopyEntireMessage() BEGIN
 		SET OutputRoot.JSON.Data = 'hello this is modified jenkins';
