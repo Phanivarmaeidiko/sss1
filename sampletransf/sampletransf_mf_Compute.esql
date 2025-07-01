@@ -19,6 +19,6 @@ CREATE COMPUTE MODULE sampletransf_mf_Compute
 	END;
 
 	CREATE PROCEDURE CopyEntireMessage() BEGIN
-		SET OutputRoot.JSON.Data = InputRoot.XMLNSC;
+		SET OutputRoot.JSON.Data = "hello this is modified";
 	END;
 END MODULE;
